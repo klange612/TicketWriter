@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TicketWriterViewController : UIViewController
+@interface TicketWriterViewController : UIViewController <UIPickerViewDelegate>
+
 
 @end
+NSArray * violations;

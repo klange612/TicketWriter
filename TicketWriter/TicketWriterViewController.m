@@ -10,15 +10,45 @@
 
 @interface TicketWriterViewController ()
 
+@property (weak, nonatomic) IBOutlet UIPickerView *PickerView;
+
+@property (weak, nonatomic) IBOutlet UIButton *evidencePhotoButton;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *submitViolationButton;
+
 @end
 
 @implementation TicketWriterViewController
 
+@synthesize PickerView;
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	violations = [[NSArray alloc] initWithObjects:@"Double Parked", @"Fire Hydrant", @"Other", nil];
 }
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return [violations objectAtIndex:row];
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    NSLog(@"Picker Selected: %@, row: %i", [violations objectAtIndex:row], row);
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    
+    return [violations count];
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
