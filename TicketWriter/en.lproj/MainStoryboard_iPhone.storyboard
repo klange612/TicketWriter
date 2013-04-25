@@ -48,21 +48,62 @@
                                     <constraint firstAttribute="height" constant="128" id="hGG-9Y-6bO"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Plate State: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvU-pv-vQ1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="r08-2c-Q7o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Plate Number: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Do8-oD-oPJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="8p1-vf-AOv"/>
+                                    <constraint firstAttribute="width" constant="132" id="v1B-iA-Byf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XzB-qz-BvJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="UAx-KU-8se"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHV-HH-Dwl">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="HsI-KW-yby"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zvU-pv-vQ1" firstAttribute="top" secondItem="Nur-hA-ZdU" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="1QB-ZX-1Tm"/>
+                            <constraint firstItem="Do8-oD-oPJ" firstAttribute="baseline" secondItem="pHV-HH-Dwl" secondAttribute="baseline" type="default" id="41U-Hu-e0D"/>
                             <constraint firstAttribute="bottom" secondItem="njN-tQ-VZc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="7zK-cl-4yQ"/>
+                            <constraint firstItem="pHV-HH-Dwl" firstAttribute="centerY" secondItem="Do8-oD-oPJ" secondAttribute="centerY" type="default" id="9Zl-5H-Ofj"/>
                             <constraint firstAttribute="trailing" secondItem="njN-tQ-VZc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="BR4-zY-O9T"/>
+                            <constraint firstItem="XzB-qz-BvJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="155" id="CIh-Tf-Ras"/>
                             <constraint firstItem="njN-tQ-VZc" firstAttribute="top" secondItem="FYe-zZ-50h" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CS1-Vs-rCZ"/>
+                            <constraint firstItem="zvU-pv-vQ1" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="EPC-qg-XPm"/>
                             <constraint firstItem="Nur-hA-ZdU" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="FpH-uT-i7h"/>
                             <constraint firstAttribute="trailing" secondItem="FYe-zZ-50h" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Kaf-hy-9gX"/>
+                            <constraint firstItem="Do8-oD-oPJ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="270" id="NRc-Te-waC"/>
                             <constraint firstItem="Nur-hA-ZdU" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="PyR-tl-7nB"/>
                             <constraint firstItem="njN-tQ-VZc" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="TQJ-k7-snO"/>
                             <constraint firstItem="FYe-zZ-50h" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Wvq-uT-Ujz"/>
                             <constraint firstItem="xL7-3W-Mde" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Xom-NG-UEJ"/>
                             <constraint firstItem="Nur-hA-ZdU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="feB-4B-YCB"/>
                             <constraint firstAttribute="trailing" secondItem="xL7-3W-Mde" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ipK-Yz-Gdi"/>
-                            <constraint firstItem="xL7-3W-Mde" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="yOt-0a-mbG"/>
+                            <constraint firstItem="Do8-oD-oPJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lAe-bR-mWx"/>
+                            <constraint firstItem="njN-tQ-VZc" firstAttribute="top" secondItem="xL7-3W-Mde" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="r1F-Lh-qT6"/>
+                            <constraint firstItem="Do8-oD-oPJ" firstAttribute="trailing" secondItem="zvU-pv-vQ1" secondAttribute="trailing" type="default" id="tX6-wz-YYv"/>
+                            <constraint firstItem="XzB-qz-BvJ" firstAttribute="centerY" secondItem="zvU-pv-vQ1" secondAttribute="centerY" type="default" id="uKX-qQ-Ak1"/>
+                            <constraint firstItem="pHV-HH-Dwl" firstAttribute="leading" secondItem="XzB-qz-BvJ" secondAttribute="leading" type="default" id="wcF-Nb-8O3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -75,6 +116,21 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TicketWriterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TicketWriterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="evidencePhotoButton"/>
+                <relationship kind="action" name="useCamera:"/>
+                <relationship kind="outlet" name="PickerView" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="submitViolationButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

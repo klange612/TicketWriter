@@ -20,6 +20,7 @@
 @synthesize PickerView;
 @synthesize imageView;
 
+/*
 -(IBAction)useCamera:(id)sender
 {
     [self startCameraControllerFromViewController:self usingDelegate:self];
