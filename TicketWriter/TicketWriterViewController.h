@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface TicketWriterViewController : UIViewController <UIPickerViewDelegate>
+@interface TicketWriterViewController : UIViewController <UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+- (IBAction)evidencePhotoButton;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)useCamera:(id)sender;
 
 @end
+
 NSArray * violations;
